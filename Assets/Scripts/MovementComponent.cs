@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovementComponent : MonoBehaviour {
 
-    private Rigidbody2D Body;
-
     public Vector2 Forward { get; private set; }
+	public float MoveVelocity;
 
-    [SerializeField]
-    private float MoveVelocity;
+	private Rigidbody2D body;
 
 	void Awake ()
     {
-        Body = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>();
         Forward = Vector2.up;
     }
 
@@ -22,10 +17,10 @@ public class MovementComponent : MonoBehaviour {
     {
         if (enabled)
         {
-            Body.velocity = InputVector * MoveVelocity;
-            if (Body.velocity.magnitude > 0)
+            body.velocity = InputVector * MoveVelocity;
+            if (body.velocity.magnitude > 0)
             {
-                Forward = Body.velocity.normalized;
+                Forward = body.velocity.normalized;
             }
         }
     }
