@@ -1119,7 +1119,7 @@ Prefab:
       objectReference: {fileID: 1576758712}
     - target: {fileID: 1895303548564802, guid: a8288e5f8155fd442be5aa5844bb4e65, type: 2}
       propertyPath: m_Name
-      value: Factory_Left (1)
+      value: Factory_Right
       objectReference: {fileID: 0}
     - target: {fileID: 114314513944590050, guid: a8288e5f8155fd442be5aa5844bb4e65,
         type: 2}
