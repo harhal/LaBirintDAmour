@@ -19,6 +19,7 @@ public class StatsComponent : MonoBehaviour
 	public void ChangeHealth(float deltaHealth)
 	{
 		Health += deltaHealth;
+        Health = Mathf.Clamp(Health, 0, MaxHealth);
 		Validate();
 	}
 
