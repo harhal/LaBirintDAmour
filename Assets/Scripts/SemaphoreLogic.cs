@@ -29,6 +29,7 @@ public class SemaphoreLogic : MonoBehaviour {
     [SerializeField] GameObject Door;
     StatsComponent playerLeft;
     StatsComponent playerRight;
+    int previousType;
 
 
 
@@ -64,8 +65,11 @@ public class SemaphoreLogic : MonoBehaviour {
                         }
                         leftTime = roundTime;
                         currentType = Random.Range(0, 4);
-                        PanelsPairs[currentType].left.SetActiveColor();
-                        PanelsPairs[currentType].right.SetActiveColor();
+                        if (previousType == currentType)
+                            currentType = currentType % 3 + 1;
+                        previousType = currentType;
+                        //PanelsPairs[currentType].left.SetActiveColor();
+                        //PanelsPairs[currentType].right.SetActiveColor();
                         UIPanelElements[currentType].SetActiveColor();
                         currentState = GameStates.wait;
                         break;
@@ -90,8 +94,8 @@ public class SemaphoreLogic : MonoBehaviour {
                     }
                 case GameStates.end:
                     {
-                        PanelsPairs[currentType].left.SetDefaultColor();
-                        PanelsPairs[currentType].right.SetDefaultColor();
+                        //PanelsPairs[currentType].left.SetDefaultColor();
+                        //PanelsPairs[currentType].right.SetDefaultColor();
                         UIPanelElements[currentType].SetDefaultColor();
                         currentState = GameStates.start;
                         break;
