@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class MovementComponent : MonoBehaviour {
 
     private Rigidbody2D Body;
@@ -21,10 +20,13 @@ public class MovementComponent : MonoBehaviour {
 
     public void AddMovement(Vector2 InputVector)
     {
-        Body.velocity = InputVector * MoveVelocity;
-        if (Body.velocity.magnitude > 0)
+        if (enabled)
         {
-            Forward = Body.velocity.normalized;
+            Body.velocity = InputVector * MoveVelocity;
+            if (Body.velocity.magnitude > 0)
+            {
+                Forward = Body.velocity.normalized;
+            }
         }
     }
 }

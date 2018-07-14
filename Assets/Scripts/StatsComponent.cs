@@ -25,6 +25,9 @@ public class StatsComponent : MonoBehaviour
 
 	public void Validate()
 	{
-		text.text = Health.ToString();
+        if (text != null)
+        {
+            text.text = Health.ToString();
+        }
 	}
 }
