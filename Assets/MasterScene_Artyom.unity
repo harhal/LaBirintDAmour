@@ -1126,6 +1126,11 @@ Prefab:
       propertyPath: mobs.Array.data[0].gameObject
       value: 
       objectReference: {fileID: 1453355090}
+    - target: {fileID: 114314513944590050, guid: a8288e5f8155fd442be5aa5844bb4e65,
+        type: 2}
+      propertyPath: DeltaTime
+      value: 5000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8288e5f8155fd442be5aa5844bb4e65, type: 2}
   m_IsPrefabParent: 0

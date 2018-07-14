@@ -79,6 +79,7 @@ public class MobsFactory : MonoBehaviour {
 			return;
 
 		AIMoveToPlayer newOne = Instantiate(mobPrototype, cache[random.Next(cache.Count)].transform);
+		newOne.transform.localPosition = new Vector3();
 		newOne.Target = Character.gameObject;
 		newOne.gameObject.SetActive(true);
 		cache.Clear();
