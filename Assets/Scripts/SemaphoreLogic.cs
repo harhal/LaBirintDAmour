@@ -22,6 +22,8 @@ enum GameStates
 
 public class SemaphoreLogic : MonoBehaviour, IQuest
 {
+	public Image image;
+
 	[SerializeField]
 	private List<Color> UIColors;
     [SerializeField]
@@ -35,7 +37,6 @@ public class SemaphoreLogic : MonoBehaviour, IQuest
 	private StatsComponent playerLeft;
 	private StatsComponent playerRight;
 	private int previousType;
-	private Image image;
 
 	bool isGameStart = false;
     int currentType;
@@ -50,7 +51,6 @@ public class SemaphoreLogic : MonoBehaviour, IQuest
 
 	private void Awake()
     {
-		image = GetComponent<Image>();
 		image.enabled = false;
 		leftTime = roundTime;
     }
