@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4081169833531886}
   - component: {fileID: 212511132935936150}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4518394911920530}
   - component: {fileID: 212678086512190516}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4886414405817622}
   - component: {fileID: 212646132847703978}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4141169815022470}
   - component: {fileID: 212791956367931680}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4800601699142688}
   - component: {fileID: 114404061230863566}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cage
   m_TagString: Untagged
   m_Icon: {fileID: 0}

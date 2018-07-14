@@ -16,8 +16,8 @@ TagManager:
   - PlayerCharacters
   - Enemies
   - ViewBounds
-  - 
-  - 
+  - PlayersProjectiles
+  - PierceableWall
   - 
   - 
   - 
