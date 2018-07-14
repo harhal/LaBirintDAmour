@@ -8,7 +8,7 @@ public class CharactersOwner : MonoBehaviour {
 	public InputComponent Right { get; private set; }
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		InputComponent[] res = FindObjectsOfType<InputComponent>();
 		if (res[0].transform.position.x > res[1].transform.position.x)
 		{

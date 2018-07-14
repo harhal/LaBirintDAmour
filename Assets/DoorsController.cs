@@ -1,17 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-public class DorsController : MonoBehaviour {
+public class DoorsController : MonoBehaviour {
 
 	private const float speed = 3;
-
+	
 	public float SideSize = 20;
+	public GameObject Quest;
 
-	private bool isOpening = true;
 	private Transform left;
 	private Transform right;
-
+	private bool isOpening = false;
 	private VeiwController viewController;
 
 	private void Awake()
@@ -66,7 +65,13 @@ public class DorsController : MonoBehaviour {
 	{
 		viewController = other.GetComponent<VeiwController>();
 		if (viewController != null)
+		{
 			viewController.IsCaptured = true;
+
+			var quest = Quest.GetComponent<IQuest>();
+			if (quest != null)
+				quest.RunQuest();
+		}
 	}
 
 	private void OnTriggerExit(Collider other)
@@ -78,4 +83,9 @@ public class DorsController : MonoBehaviour {
 			viewController = null;
 		}
 	}
+}
+
+public interface IQuest
+{
+	void RunQuest();
 }

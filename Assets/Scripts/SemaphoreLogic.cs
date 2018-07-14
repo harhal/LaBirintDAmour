@@ -20,13 +20,13 @@ enum GameStates
 }
 
 
-public class SemaphoreLogic : MonoBehaviour {
+public class SemaphoreLogic : MonoBehaviour, IQuest {
 
     [SerializeField] List<SemaphorePanelElement> UIPanelElements;
     [SerializeField] List<Pair> PanelsPairs;
     [SerializeField] float roundTime;
     [SerializeField] float timeDelta;
-    [SerializeField] GameObject Door;
+    [SerializeField] DoorsController Door;
     StatsComponent playerLeft;
     StatsComponent playerRight;
     int previousType;
@@ -38,21 +38,24 @@ public class SemaphoreLogic : MonoBehaviour {
     float leftTime;
     GameStates currentState = GameStates.start;
 
-    private void Awake()
+	public void RunQuest()
+	{
+		isGameStart = true;
+	}
+
+	private void Awake()
     {
         leftTime = roundTime;
     }
 
     private void Start()
     {
-        playerLeft = GameObject.Find("Character1").GetComponent<StatsComponent>();
-        playerRight = GameObject.Find("Character2").GetComponent<StatsComponent>();
-    }
+		playerLeft = FindObjectOfType<CharactersOwner>().Left.GetComponent<StatsComponent>();
+        playerRight = FindObjectOfType<CharactersOwner>().Right.GetComponent<StatsComponent>();
+	}
 
     private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-            isGameStart = true;
+    {           
         if (isGameStart) {
             switch (currentState) { 
                 case GameStates.start:
@@ -104,6 +107,7 @@ public class SemaphoreLogic : MonoBehaviour {
                     {
                         isGameStart = false;
                         Debug.Log("Dealed with it");
+						Door.Open();
                         //TODO open the door and destroy itself
                         break;
                     }
