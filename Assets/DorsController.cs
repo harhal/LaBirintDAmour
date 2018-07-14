@@ -12,6 +12,8 @@ public class DorsController : MonoBehaviour {
 	private Transform left;
 	private Transform right;
 
+	private VeiwController viewController;
+
 	private void Awake()
 	{
 		Transform[] doors1 = GetComponentsInChildren<Transform>();
@@ -43,12 +45,37 @@ public class DorsController : MonoBehaviour {
 		left.transform.position += speed * Time.deltaTime * Vector3.left;
 		right.transform.position += speed * Time.deltaTime * Vector3.right;
 
-		if ( (right.transform.position - left.transform.position).magnitude >  2 * SideSize )
+		if ((right.transform.position - left.transform.position).magnitude > 2 * SideSize)
+		{
 			isOpening = false;
+			GetComponent<Collider>().enabled = false;
+			if (viewController != null)
+			{
+				viewController.IsCaptured = false;
+				viewController = null;
+			}
+		}
 	}
 
 	public void Open()
 	{
 		isOpening = true;
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		viewController = other.GetComponent<VeiwController>();
+		if (viewController != null)
+			viewController.IsCaptured = true;
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		viewController = other.GetComponent<VeiwController>();
+		if (viewController != null)
+		{
+			viewController.IsCaptured = false;
+			viewController = null;
+		}
 	}
 }

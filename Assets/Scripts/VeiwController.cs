@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class VeiwController : MonoBehaviour {
 
-	Transform[] characters;
+	private const float lenCoeff = 5f;
+	private Transform[] characters;
 
 	void Start () {
 		var components = FindObjectsOfType<InputComponent>();
@@ -18,14 +19,36 @@ public class VeiwController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		if (isCaptured)
+			return;
+
+		Vector3 cameraPosition = transform.position;
+		float realMiddleY = GetY();
+
+		float currentDelta = Mathf.Max(0, realMiddleY - cameraPosition.y);
+		float delta = Mathf.Min(lenCoeff * Time.deltaTime, currentDelta);
+		cameraPosition.y += delta;
+		transform.position = cameraPosition;
+	}
+
+	private float GetY()
+	{
 		Vector3 position = new Vector3();
 		for (int i = 0; i < characters.Length; i++)
 		{
 			position += characters[i].position;
 		}
 		position /= characters.Length;
-		Vector3 cameraPosition = transform.position;
-		cameraPosition.y = position.y;
-		transform.position = cameraPosition;
+		return position.y;
+	}
+
+	private bool isCaptured;
+	public bool IsCaptured
+	{
+		get { return isCaptured; }
+		set
+		{
+			isCaptured = value;
+		}
 	}
 }
