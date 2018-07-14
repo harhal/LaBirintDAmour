@@ -2,54 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputComponent : MonoBehaviour {
-
+public class InputComponent : MonoBehaviour
+{
     protected MovementComponent Movement;
     protected ShotComponent Shot;
-
-    public GameObject Pawn;
 
     public string HorisontalAxis;
     public string VerticalAxis;
     public string ShotButton;
-
-    public void Possess(GameObject Pawn)
-    {
-        this.Pawn = Pawn;
-        Movement = Pawn.GetComponent<MovementComponent>();
-        Shot = Pawn.GetComponent<ShotComponent>();
-    }
+	public string ShareButton;
 
 	// Use this for initialization
 	void Awake ()
     {
-        if (Pawn != null)
-        {
-            Possess(Pawn);
-        }
-        else
-        {
-            var ComponentFindResult = GetComponentInChildren<MovementComponent>();
-            if (ComponentFindResult != null)
-            {
-                Possess(ComponentFindResult.gameObject);
-            }
-        }
+		Movement = GetComponent<MovementComponent>();
+		Shot = GetComponent<ShotComponent>();
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (Movement != null)
+        Movement.AddMovement(new Vector2(Input.GetAxis(HorisontalAxis), Input.GetAxis(VerticalAxis)));
+        if (Input.GetButtonDown(ShotButton))
         {
-            Movement.AddMovement(new Vector2(Input.GetAxis(HorisontalAxis), Input.GetAxis(VerticalAxis)));
+            Shot.TryOpenFire(Movement.Forward);
         }
-        if (Shot != null)
-        {
-            if (Input.GetButtonDown(ShotButton))
-            {
-                Shot.TryOpenFire(Movement.GetForwardVector());
-            }
-        }
-    }
+		if (Input.GetButtonDown(ShareButton))
+		{
+			
+		}
+	}
 }

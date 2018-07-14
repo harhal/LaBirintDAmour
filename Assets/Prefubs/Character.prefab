@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114253847396286276}
   - component: {fileID: 114828971347606828}
   - component: {fileID: 114536138663417322}
+  - component: {fileID: 114089936351074938}
   m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
@@ -80,6 +81,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45
+--- !u!114 &114089936351074938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070436201397674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e4831b3aa5c714daf9a7de8f011823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorisontalAxis: Horizontal1
+  VerticalAxis: Vertical2
+  ShotButton: Shot2
+  ShareButton: Share1
 --- !u!114 &114253847396286276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f04d5afe153a6947a5e893d9e3e3e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletPrefub: {fileID: 114011883244829018, guid: 36f6449683c1e2d42b78bdcb178b6eb6,
+  BulletPrefub: {fileID: 114491146024547662, guid: ac63b60925cf1b7428c085ca55abdfbd,
     type: 2}
   ShotRate: 5
 --- !u!212 &212719077945188878

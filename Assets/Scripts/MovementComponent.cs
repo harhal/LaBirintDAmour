@@ -26,9 +26,4 @@ public class MovementComponent : MonoBehaviour {
             Forward = Body.velocity.normalized;
         }
     }
-
-    public Vector2 GetForwardVector()
-    {
-        return Forward;
-    }
 }
