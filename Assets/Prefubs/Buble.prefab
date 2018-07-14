@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 114491146024547662}
   - component: {fileID: 23321153468660280}
   - component: {fileID: 33744242279955868}
+  - component: {fileID: 114409513655156624}
+  - component: {fileID: 114394700737371732}
   m_Layer: 8
   m_Name: Buble
   m_TagString: Untagged
@@ -120,6 +122,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &114394700737371732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122037768701906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc2b6015d2b8cd42bfffc88e264ccbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+  Impulse: 0.5
+  StunTime: 0.5
+--- !u!114 &114409513655156624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122037768701906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47f4088882c2624694666d09c2ccdbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114491146024547662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,6 +160,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Velocity: 1
   LifeTime: 15
-  Damage: 0
   CrossAmplitude: 1
   CrossPhase: 1

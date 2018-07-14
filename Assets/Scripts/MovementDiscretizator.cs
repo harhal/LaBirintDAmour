@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MovementComponent))]
 public class MovementDiscretizator : MonoBehaviour
 {
     private MovementComponent Movement;
