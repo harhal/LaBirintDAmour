@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SideSize: 10
-  Quest: {fileID: 0}
+  Quest: {fileID: 1714371502684800}
 --- !u!114 &114429178975229256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1124,7 +1124,7 @@ MonoBehaviour:
     right: {fileID: 114861415597372086}
   - left: {fileID: 114131441577722334}
     right: {fileID: 114808473342884334}
-  roundTime: 0.5
+  roundTime: 1
   timeDelta: 0.1
   Door: {fileID: 114263535579179544}
 --- !u!114 &114522220473270686

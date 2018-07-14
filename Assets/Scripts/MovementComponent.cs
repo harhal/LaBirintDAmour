@@ -2,7 +2,7 @@
 
 public class MovementComponent : MonoBehaviour {
 
-    public Vector2 Forward { get; private set; }
+    public Vector2 LookDirection { get; private set; }
 	public float MoveVelocity;
 
 	private Rigidbody2D body;
@@ -10,7 +10,7 @@ public class MovementComponent : MonoBehaviour {
 	void Awake ()
     {
         body = GetComponent<Rigidbody2D>();
-        Forward = Vector2.up;
+        LookDirection = Vector2.up;
     }
 
     public void AddMovement(Vector2 InputVector)
@@ -18,9 +18,11 @@ public class MovementComponent : MonoBehaviour {
         if (enabled)
         {
             body.velocity = InputVector * MoveVelocity;
-            if (body.velocity.magnitude > 0)
+            if (InputVector.magnitude > 0.05f)
             {
-                Forward = body.velocity.normalized;
+				Debug.Log(InputVector);
+				InputVector.Normalize();
+                LookDirection = InputVector;
             }
         }
     }

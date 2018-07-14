@@ -40,7 +40,7 @@ public class InputComponent : MonoBehaviour
 	{
 		if (Input.GetButtonDown(ShotButton))
 		{
-			Shot.TryOpenFire(Movement.Forward);
+			Shot.TryOpenFire(Movement.LookDirection);
 		}
 		if (Input.GetButtonDown(ShareButton))
 		{
