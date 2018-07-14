@@ -25,12 +25,13 @@ GameObject:
   - component: {fileID: 50877818349360516}
   - component: {fileID: 58272889649643140}
   - component: {fileID: 114769770526129498}
-  - component: {fileID: 114832325242089612}
   - component: {fileID: 114745953808108788}
   - component: {fileID: 114598207795267902}
   - component: {fileID: 114025621192504652}
   - component: {fileID: 114484021065066658}
-  m_Layer: 0
+  - component: {fileID: 114330573910365596}
+  - component: {fileID: 114174782625348684}
+  m_Layer: 9
   m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,6 +98,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveVelocity: 1
+--- !u!114 &114174782625348684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951548406871406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62185f03080ef64780e8e6a903ca5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  WalkMinDelay: 0.5
+  WalkMaxDelay: 3
+  MinTargetDistance: 3
+  TargetSideFactor: 100
+  ShotProbability: 0.5
+--- !u!114 &114330573910365596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951548406871406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d9fb40ec5337d4f8fe898337ce7ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114484021065066658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,8 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81400949e63024cb2521444159b06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 2
   text: {fileID: 0}
-  Health: 100
+  Health: 2
 --- !u!114 &114598207795267902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  Impulse: 1
+  Impulse: 3
   StunTime: 0.5
 --- !u!114 &114769770526129498
 MonoBehaviour:
@@ -160,21 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StepSize: 1
   Accuracy: 0.1
---- !u!114 &114832325242089612
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1951548406871406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cd02368f9d0d140a3d3aea3055b7c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkMinDelay: 0.5
-  WalkMaxDelay: 3
-  MinTargetDistance: 3
-  TargetSideFactor: 9
 --- !u!114 &114978662451033814
 MonoBehaviour:
   m_ObjectHideFlags: 1

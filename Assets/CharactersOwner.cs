@@ -10,15 +10,23 @@ public class CharactersOwner : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		InputComponent[] res = FindObjectsOfType<InputComponent>();
-		if (res[0].transform.position.x > res[1].transform.position.x)
-		{
-			Right = res[0];
-			Left = res[1];
-		}
-		else
-		{
-			Right = res[1];
-			Left = res[0];
-		}
+        if (res.Length > 1)
+        {
+            if (res[0].transform.position.x > res[1].transform.position.x)
+            {
+                Right = res[0];
+                Left = res[1];
+            }
+            else
+            {
+                Right = res[1];
+                Left = res[0];
+            }
+        }
+        else
+        {
+            Right = res[0];
+            Left = res[0];
+        }
 	}
 }
