@@ -18,7 +18,6 @@ public class StunComponent : MonoBehaviour {
 
     public void Stun (float StunTime) {
         StunTimer = StunTime;
-        print(StunTime.ToString());
         if (Movement != null)
         {
             Movement.enabled = StunTime == 0;

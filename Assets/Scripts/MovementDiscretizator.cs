@@ -44,4 +44,9 @@ public class MovementDiscretizator : MonoBehaviour
     {
         Destination = (Vector2)Body.transform.position + Direction * StepSize;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destination = Body.transform.position;
+    }
 }

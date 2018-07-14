@@ -31,7 +31,15 @@ public class AttackComponent : MonoBehaviour
             {
                 Stun.Stun(StunTime);
             }
-            Vector2 impulse = (victim.transform.position - transform.position).normalized * Impulse;
+            Vector2 impulse = GetComponent<Rigidbody2D>().velocity;
+            if (impulse.magnitude == 0)
+            {
+                impulse = (victim.transform.position - transform.position).normalized * Impulse;
+            }
+            else
+            {
+                impulse = impulse.normalized * Impulse;
+            }
             victim.ApplyDamageWithImpulse(Damage, impulse);
         }
     }

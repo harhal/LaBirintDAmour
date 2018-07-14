@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class StatsComponent : MonoBehaviour
 {
-	public const float MaxHealth = 150;
+    [SerializeField]
+    private float maxHealth = 150;
+    public float MaxHealth { get { return maxHealth; } private set { maxHealth = value; } }
 	public Text text;
 	[SerializeField]
 	private float Health = 100;
@@ -21,7 +23,16 @@ public class StatsComponent : MonoBehaviour
 		Health += deltaHealth;
         Health = Mathf.Clamp(Health, 0, MaxHealth);
 		Validate();
+        if (Health <= 0)
+        {
+            Death();
+        }
 	}
+
+    private void Death()
+    {
+        Destroy(gameObject);
+    }
 
 	public void Validate()
 	{
