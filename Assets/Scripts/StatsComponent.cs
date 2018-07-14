@@ -31,7 +31,8 @@ public class StatsComponent : MonoBehaviour
 
     private void Death()
     {
-        Destroy(gameObject);
+		// TODO: add normal game exit
+        //Destroy(gameObject);
     }
 
 	public void Validate()

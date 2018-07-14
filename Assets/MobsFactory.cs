@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MobsFactory : MonoBehaviour {
@@ -28,7 +29,7 @@ public class MobsFactory : MonoBehaviour {
 
 	private void Awake()
 	{
-		spawners = GetComponentsInChildren<Transform>();
+		spawners = GetComponentsInChildren<Transform>().Where(s => s != transform).ToArray();
 		sumProba = 0;
 		for (int i = 0; i < mobs.Length; i++)
 		{

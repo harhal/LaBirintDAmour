@@ -20,21 +20,24 @@ enum GameStates
 }
 
 
-public class SemaphoreLogic : MonoBehaviour, IQuest {
+public class SemaphoreLogic : MonoBehaviour, IQuest
+{
+	[SerializeField]
+	private List<Color> UIColors;
+    [SerializeField]
+	private List<Pair> PanelsPairs;
+    [SerializeField]
+	private float roundTime;
+    [SerializeField]
+	private float timeDelta;
+    [SerializeField]
+	private DoorsController Door;
+	private StatsComponent playerLeft;
+	private StatsComponent playerRight;
+	private int previousType;
+	private Image image;
 
-    [SerializeField] List<Color> UIColors;
-    [SerializeField] List<Pair> PanelsPairs;
-    [SerializeField] float roundTime;
-    [SerializeField] float timeDelta;
-    [SerializeField] DoorsController Door;
-    StatsComponent playerLeft;
-    StatsComponent playerRight;
-    int previousType;
-    Image image;
-
-
-
-    bool isGameStart = false;
+	bool isGameStart = false;
     int currentType;
     float leftTime;
     GameStates currentState = GameStates.start;
@@ -42,11 +45,14 @@ public class SemaphoreLogic : MonoBehaviour, IQuest {
 	public void RunQuest()
 	{
 		isGameStart = true;
+		image.enabled = true;
 	}
 
 	private void Awake()
     {
-        leftTime = roundTime;
+		image = GetComponent<Image>();
+		image.enabled = false;
+		leftTime = roundTime;
     }
 
     private void Start()
@@ -57,7 +63,8 @@ public class SemaphoreLogic : MonoBehaviour, IQuest {
 
     private void Update()
     {           
-        if (isGameStart) {
+        if (isGameStart)
+		{
             switch (currentState) { 
                 case GameStates.start:
                     {
@@ -105,8 +112,9 @@ public class SemaphoreLogic : MonoBehaviour, IQuest {
                         isGameStart = false;
                         Debug.Log("Dealed with it");
 						Door.Open();
-                        //TODO open the door and destroy itself
-                        break;
+						image.enabled = false;
+						//TODO open the door and destroy itself
+						break;
                     }
             }
         }
