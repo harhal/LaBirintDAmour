@@ -22,7 +22,7 @@ enum GameStates
 
 public class SemaphoreLogic : MonoBehaviour, IQuest {
 
-    [SerializeField] List<SemaphorePanelElement> UIPanelElements;
+    [SerializeField] List<Color> UIColors;
     [SerializeField] List<Pair> PanelsPairs;
     [SerializeField] float roundTime;
     [SerializeField] float timeDelta;
@@ -30,6 +30,7 @@ public class SemaphoreLogic : MonoBehaviour, IQuest {
     StatsComponent playerLeft;
     StatsComponent playerRight;
     int previousType;
+    Image image;
 
 
 
@@ -71,9 +72,7 @@ public class SemaphoreLogic : MonoBehaviour, IQuest {
                         if (previousType == currentType)
                             currentType = currentType % 3 + 1;
                         previousType = currentType;
-                        //PanelsPairs[currentType].left.SetActiveColor();
-                        //PanelsPairs[currentType].right.SetActiveColor();
-                        UIPanelElements[currentType].SetActiveColor();
+                        image.color=UIColors[currentType];
                         currentState = GameStates.wait;
                         break;
                     }
@@ -97,9 +96,7 @@ public class SemaphoreLogic : MonoBehaviour, IQuest {
                     }
                 case GameStates.end:
                     {
-                        //PanelsPairs[currentType].left.SetDefaultColor();
-                        //PanelsPairs[currentType].right.SetDefaultColor();
-                        UIPanelElements[currentType].SetDefaultColor();
+                        image.color = Color.white;
                         currentState = GameStates.start;
                         break;
                     }
