@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VeiwController : MonoBehaviour {
 
-	private const float lenCoeff = 5f;
+	private const float lenCoeff = 10f;
 	private Transform[] characters;
 
 	void Start () {
@@ -26,6 +26,7 @@ public class VeiwController : MonoBehaviour {
 		float realMiddleY = GetY();
 
 		float currentDelta = Mathf.Max(0, realMiddleY - cameraPosition.y);
+
 		float delta = Mathf.Min(lenCoeff * Time.deltaTime, currentDelta);
 		cameraPosition.y += delta;
 		transform.position = cameraPosition;
