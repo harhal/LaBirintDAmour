@@ -22,7 +22,7 @@ public class DamageReceiver : MonoBehaviour {
     {
         if (Stats != null)
         {
-            Stats.AddHealth(-damage);
+            //Stats.AddHealth(-damage);
         }
     }
 }

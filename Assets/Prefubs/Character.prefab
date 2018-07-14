@@ -92,9 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e4831b3aa5c714daf9a7de8f011823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Delta: 10
   HorisontalAxis: Horizontal1
-  VerticalAxis: Vertical2
-  ShotButton: Shot2
+  VerticalAxis: Vertical1
+  ShotButton: Shot1
   ShareButton: Share1
 --- !u!114 &114253847396286276
 MonoBehaviour:
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81400949e63024cb2521444159b06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
+  Health: 100
 --- !u!114 &114828971347606828
 MonoBehaviour:
   m_ObjectHideFlags: 1

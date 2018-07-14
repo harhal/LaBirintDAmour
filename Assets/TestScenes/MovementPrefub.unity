@@ -1130,16 +1130,6 @@ Prefab:
       propertyPath: m_Name
       value: Character1
       objectReference: {fileID: 0}
-    - target: {fileID: 114089936351074938, guid: 2aabc67a3b0225d4b9d86073c8828ac8,
-        type: 2}
-      propertyPath: VerticalAxis
-      value: Vertical1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089936351074938, guid: 2aabc67a3b0225d4b9d86073c8828ac8,
-        type: 2}
-      propertyPath: ShotButton
-      value: Shot1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2aabc67a3b0225d4b9d86073c8828ac8, type: 2}
   m_IsPrefabParent: 0

@@ -3,23 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatsComponent : MonoBehaviour {
+public class StatsComponent : MonoBehaviour
+{
+	public const float MaxHealth = 150;
+	[SerializeField]
+	private float Health = 100;
 
-    [SerializeField]
-    private float Health = 3;
-
-	// Use this for initialization
-	void Start () {
-		
+	public void ChangeHealth(float deltaHealth)
+	{
+		Health += deltaHealth;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void AddHealth(float deltaHealth)
-    {
-        Health += deltaHealth;
-    }
 }
