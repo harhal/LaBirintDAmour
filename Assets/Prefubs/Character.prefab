@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 114828971347606828}
   - component: {fileID: 114536138663417322}
   - component: {fileID: 114089936351074938}
+  - component: {fileID: 114780647867615414}
+  - component: {fileID: 114177307627288910}
   m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
@@ -97,6 +99,17 @@ MonoBehaviour:
   VerticalAxis: Vertical1
   ShotButton: Shot1
   ShareButton: Share1
+--- !u!114 &114177307627288910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070436201397674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2dad91c68bb9a94f96973347eac612e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114253847396286276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,7 +133,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81400949e63024cb2521444159b06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 150
+  text: {fileID: 0}
   Health: 100
+--- !u!114 &114780647867615414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070436201397674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d9fb40ec5337d4f8fe898337ce7ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114828971347606828
 MonoBehaviour:
   m_ObjectHideFlags: 1

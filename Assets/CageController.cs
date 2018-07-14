@@ -16,7 +16,7 @@ public class CageController : MonoBehaviour, IQuest {
 		activateTime = Time.time;
 		oldSpeed = character.MoveVelocity;
 		character.MoveVelocity = 0;
-		transform.position = character.transform.position;
+		transform.position = character.transform.position + Vector3.forward;
 		SetAllChild(true);
 	}
 	

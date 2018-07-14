@@ -17,9 +17,8 @@ public class VeiwController : MonoBehaviour {
 			characters[i] = components[i].gameObject.transform;
 		}
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+	private void FixedUpdate()
 	{
 		if (IsCaptured)
 			return;

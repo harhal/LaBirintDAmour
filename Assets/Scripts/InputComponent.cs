@@ -30,10 +30,14 @@ public class InputComponent : MonoBehaviour
 			OtherStats = characters[1];
 	}
 
+	private void FixedUpdate()
+	{
+		Movement.AddMovement(new Vector2(Input.GetAxis(HorisontalAxis), Input.GetAxis(VerticalAxis)));
+	}
+
 	// Update is called once per frame
 	void Update()
 	{
-		Movement.AddMovement(new Vector2(Input.GetAxis(HorisontalAxis), Input.GetAxis(VerticalAxis)));
 		if (Input.GetButtonDown(ShotButton))
 		{
 			Shot.TryOpenFire(Movement.Forward);
