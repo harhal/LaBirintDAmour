@@ -6,15 +6,15 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
     [SerializeField]
-    private float Velocity;
+    protected float Velocity;
 
     [SerializeField]
-    private float LifeTime = 1;
+    protected float LifeTime = 1;
         
     [SerializeField]
-    private float Damage;
+    protected float Damage;
 
-    private Rigidbody2D Body;
+    protected Rigidbody2D Body;
 
 	// Use this for initialization
 	void Awake ()
@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	protected void Update () {
         LifeTime -= Time.deltaTime;
         if (LifeTime <= 0)
         {
@@ -41,7 +41,7 @@ public class Projectile : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    public void Launch(Vector2 position, Vector2 direction)
+    public virtual void Launch(Vector2 position, Vector2 direction)
     {
         transform.position = position;
         Body.velocity = direction * Velocity;

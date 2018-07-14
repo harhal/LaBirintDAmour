@@ -1101,6 +1101,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114828971347606828, guid: 2aabc67a3b0225d4b9d86073c8828ac8,
+        type: 2}
+      propertyPath: BulletPrefub
+      value: 
+      objectReference: {fileID: 114491146024547662, guid: ac63b60925cf1b7428c085ca55abdfbd,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2aabc67a3b0225d4b9d86073c8828ac8, type: 2}
   m_IsPrefabParent: 0
