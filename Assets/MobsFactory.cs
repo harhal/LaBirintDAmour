@@ -10,7 +10,7 @@ public class MobsFactory : MonoBehaviour {
 	[System.Serializable]
 	public class Pair
 	{
-		public GameObject gameObject;
+		public AIMoveToPlayer gameObject;
 		public float probability;
 	}
 
@@ -19,7 +19,7 @@ public class MobsFactory : MonoBehaviour {
 	public float MaxDelta = 5;
 
 	public Pair[] mobs;
-	public Transform Player;
+	public Transform Character;
 
 	private Transform[] spawners;
 	private List<Transform> cache;
@@ -39,11 +39,11 @@ public class MobsFactory : MonoBehaviour {
 
 	void Update ()
 	{
-		if (lastSpawnTime + DeltaTime > Time.time)
+		if (lastSpawnTime + DeltaTime < Time.time)
 		{
 			float value = UnityEngine.Random.Range(0, sumProba);
 			float accum = 0;
-			GameObject mobType = null;
+			AIMoveToPlayer mobType = null;
 			for (int i = 0; i < mobs.Length; i++)
 			{
 				if (value > accum)
@@ -65,15 +65,21 @@ public class MobsFactory : MonoBehaviour {
 		}
 	}
 
-	private void InstantiateType(GameObject mobType)
+	private void InstantiateType(AIMoveToPlayer mobPrototype)
 	{
 		for (int i = 0; i < spawners.Length; i++)
 		{
-			Vector3 delta = spawners[i].position - Player.position;
+			Vector3 delta = spawners[i].position - Character.position;
 			if (delta.magnitude > MinDelta && delta.magnitude < MaxDelta)
 				cache.Add(spawners[i]);
 		}
-		Instantiate(mobType, cache[random.Next(cache.Count)].transform);
+
+		if (cache.Count == 0)
+			return;
+
+		AIMoveToPlayer newOne = Instantiate(mobPrototype, cache[random.Next(cache.Count)].transform);
+		newOne.Target = Character.gameObject;
+		newOne.gameObject.SetActive(true);
 		cache.Clear();
 	}
 }

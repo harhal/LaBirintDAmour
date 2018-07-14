@@ -27,6 +27,9 @@ GameObject:
   - component: {fileID: 114769770526129498}
   - component: {fileID: 114832325242089612}
   - component: {fileID: 114745953808108788}
+  - component: {fileID: 114598207795267902}
+  - component: {fileID: 114025621192504652}
+  - component: {fileID: 114484021065066658}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -41,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1951548406871406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99149585, y: -0.37766302, z: -0.12013502}
+  m_LocalPosition: {x: 4.47, y: -1.7, z: -0.05909986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +85,42 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45
+--- !u!114 &114025621192504652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951548406871406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c570e1597b43a8c44876d807b114519f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveVelocity: 1
+--- !u!114 &114484021065066658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951548406871406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c81400949e63024cb2521444159b06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  Health: 100
+--- !u!114 &114598207795267902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951548406871406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2dad91c68bb9a94f96973347eac612e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114653983009034910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,7 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  Impulse: 5
+  Impulse: 1
+  StunTime: 0.5
 --- !u!114 &114769770526129498
 MonoBehaviour:
   m_ObjectHideFlags: 1

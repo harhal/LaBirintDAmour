@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AIMoveToPlayer : MonoBehaviour {
 
-    private MovementDiscretizator Movement;
-    private WorldSideComponent Side;
-    private GameObject Target;
+	public GameObject Target;
+
+	private MovementDiscretizator Movement;
 
     [SerializeField]
     private float WalkMinDelay;
@@ -22,8 +22,6 @@ public class AIMoveToPlayer : MonoBehaviour {
     void Awake ()
     {
         Movement = GetComponent<MovementDiscretizator>();
-        Side = transform.parent.GetComponent<WorldSideComponent>();
-        Target = Side.LocalPlayer;
     }
 
     void Update()

@@ -9,8 +9,8 @@ public class BubleProjectile : Projectile {
     [SerializeField]
     private float CrossPhase = 1;
     private Vector2 ForwardVector;
-	
-	void Update ()
+
+	new void Update ()
     {
         base.Update();
         Vector2 CrossDirection = Vector3.Cross(ForwardVector, Vector3.forward);
