@@ -7,6 +7,8 @@ public class VeiwController : MonoBehaviour {
 	private const float lenCoeff = 10f;
 	private Transform[] characters;
 
+	public bool IsCaptured { get; set; }
+
 	void Start () {
 		var components = FindObjectsOfType<InputComponent>();
 		characters = new Transform[components.Length];
@@ -19,7 +21,7 @@ public class VeiwController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (isCaptured)
+		if (IsCaptured)
 			return;
 
 		Vector3 cameraPosition = transform.position;
@@ -41,15 +43,5 @@ public class VeiwController : MonoBehaviour {
 		}
 		position /= characters.Length;
 		return position.y;
-	}
-
-	private bool isCaptured;
-	public bool IsCaptured
-	{
-		get { return isCaptured; }
-		set
-		{
-			isCaptured = value;
-		}
 	}
 }
