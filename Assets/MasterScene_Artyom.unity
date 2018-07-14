@@ -1366,7 +1366,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &918892705
 Prefab:
@@ -1405,7 +1405,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4784373006522020, guid: 2aabc67a3b0225d4b9d86073c8828ac8, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114828971347606828, guid: 2aabc67a3b0225d4b9d86073c8828ac8,
         type: 2}
@@ -1827,6 +1827,53 @@ Transform:
   m_PrefabParentObject: {fileID: 4608857106557752, guid: a8288e5f8155fd442be5aa5844bb4e65,
     type: 2}
   m_PrefabInternal: {fileID: 707162505}
+--- !u!1001 &1205752726
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800601699142688, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404061230863566, guid: e8a30d7596ac5514f9635f098fb571bd,
+        type: 2}
+      propertyPath: DoorsController
+      value: 
+      objectReference: {fileID: 1644410139}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e8a30d7596ac5514f9635f098fb571bd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1318584623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,48 +3204,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1917073289}
---- !u!1 &2044817979
+--- !u!1 &2044817979 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2044817980}
-  - component: {fileID: 2044817981}
-  m_Layer: 0
-  m_Name: Cage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2044817980
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2044817979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2044817981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2044817979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a566ba171a36747bcbe349e451f69e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Duration: 10
-  DoorsController: {fileID: 1644410139}
+  m_PrefabParentObject: {fileID: 1907653156850778, guid: e8a30d7596ac5514f9635f098fb571bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1205752726}
 --- !u!4 &2047957639 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4054165044268308, guid: 51c26d76291778a44a1c248a5b27679f,
