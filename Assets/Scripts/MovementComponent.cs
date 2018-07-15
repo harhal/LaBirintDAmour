@@ -5,11 +5,14 @@ public class MovementComponent : MonoBehaviour {
     public Vector2 LookDirection { get; private set; }
 	public float MoveVelocity;
 
+    private VisualController Visual;
+
 	private Rigidbody2D body;
 
 	void Awake ()
     {
         body = GetComponent<Rigidbody2D>();
+        Visual = GetComponent<VisualController>();
         LookDirection = Vector2.up;
     }
 
@@ -20,9 +23,11 @@ public class MovementComponent : MonoBehaviour {
             body.velocity = InputVector * MoveVelocity;
             if (InputVector.magnitude > 0.05f)
             {
-				Debug.Log(InputVector);
-				InputVector.Normalize();
-                LookDirection = InputVector;
+                LookDirection = InputVector.normalized;
+            }
+            if (Visual != null)
+            {
+                Visual.SetMovement(LookDirection, body.velocity.magnitude);
             }
         }
     }

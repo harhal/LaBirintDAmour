@@ -31,8 +31,15 @@ public class StatsComponent : MonoBehaviour
 
     private void Death()
     {
-		// TODO: add normal game exit
-        //Destroy(gameObject);
+        var Visual = GetComponent<VisualController>();
+        if (Visual != null)
+        {
+            Visual.PlayDeath();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 	public void Validate()

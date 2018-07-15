@@ -4,10 +4,27 @@ using UnityEngine;
 
 public class VisualController : MonoBehaviour {
 
+    public virtual void SetMovement(Vector2 Rotation, float Velocity)
+    {
 
+    }
 
-	// Use this for initialization
-	void Start () {
+    public virtual IEnumerator PlayDeath()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            yield return new WaitForSeconds(0.1f);
+            SwitchVisualVisibility();
+        }
+        Destroy(gameObject);
+    }
+
+    protected virtual void SwitchVisualVisibility()
+    {
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
