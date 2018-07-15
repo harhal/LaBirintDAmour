@@ -49,7 +49,7 @@ public class DoorsController : MonoBehaviour {
 		if ((right.transform.position - left.transform.position).magnitude > 2 * SideSize)
 		{
 			isOpening = false;
-			GetComponent<Collider>().enabled = false;
+			GetComponent<Collider2D>().enabled = false;
 			if (viewController != null)
 			{
 				viewController.IsCaptured = false;
@@ -63,9 +63,9 @@ public class DoorsController : MonoBehaviour {
 		isOpening = true;
 	}
 
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		viewController = other.GetComponent<VeiwController>();
+		viewController = collision.GetComponent<VeiwController>();
 		if (viewController != null)
 		{
 			viewController.IsCaptured = true;
@@ -76,9 +76,9 @@ public class DoorsController : MonoBehaviour {
 		}
 	}
 
-	private void OnTriggerExit(Collider other)
+	private void OnTriggerExit2D(Collider2D collision)
 	{
-		viewController = other.GetComponent<VeiwController>();
+		viewController = collision.GetComponent<VeiwController>();
 		if (viewController != null)
 		{
 			viewController.IsCaptured = false;

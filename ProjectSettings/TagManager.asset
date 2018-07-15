@@ -18,8 +18,8 @@ TagManager:
   - ViewBounds
   - PlayersProjectiles
   - PierceableWall
-  - 
-  - 
+  - CameraLayer
+  - DoorLayer
   - 
   - 
   - 
