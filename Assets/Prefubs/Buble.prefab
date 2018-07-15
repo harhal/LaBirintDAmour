@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1452afef93ffdb74fa1f03d1330de5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 1
+  Velocity: 4
   LifeTime: 15
   CrossAmplitude: 1
   CrossPhase: 1
