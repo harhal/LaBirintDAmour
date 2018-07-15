@@ -8,14 +8,16 @@ public class DoorsController : MonoBehaviour {
 	public float SideSize = 20;
 	public GameObject Quest;
 
+    [SerializeField]
 	private Transform left;
-	private Transform right;
+    [SerializeField]
+    private Transform right;
 	private bool isOpening = false;
 	private VeiwController viewController;
 
 	private void Awake()
 	{
-		Transform[] doors1 = GetComponentsInChildren<Transform>();
+		/*Transform[] doors1 = GetComponentsInChildren<Transform>();
 		Transform[] doors = new Transform[2];
 		int i = 0;
 		if (doors1[0] != transform)
@@ -34,7 +36,7 @@ public class DoorsController : MonoBehaviour {
 		{
 			left = doors[0].transform;
 			right = doors[1].transform;
-		}
+		}*/
 	}
 
 	void Update () {

@@ -33,7 +33,6 @@ public class AnimatedVisualController : VisualController
             if (state == null || !state.isPlaying)
             {
                 Animation.animation.FadeIn(RunAnimation, 0.1f);
-                print("Run");
             }
         }
     }
