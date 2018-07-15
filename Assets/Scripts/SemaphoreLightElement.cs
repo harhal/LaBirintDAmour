@@ -6,16 +6,18 @@ public class SemaphoreLightElement : MonoBehaviour {
 
     [SerializeField] Color defaultColor;
     [SerializeField] Color activeColor;
+    [SerializeField]
+    MeshRenderer Target;
     public bool isPressed = false;
 
     public void SetActiveColor()
     {
-        gameObject.GetComponent<SpriteRenderer>().color = activeColor;
+        Target.material.color = activeColor;
     }
 
     public void SetDefaultColor()
     {
-        gameObject.GetComponent<SpriteRenderer>().color = defaultColor;
+        Target.material.color = defaultColor;
     }
 
 
