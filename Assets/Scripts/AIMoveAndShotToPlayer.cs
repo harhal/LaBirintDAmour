@@ -8,6 +8,9 @@ public class AIMoveAndShotToPlayer : AIMoveToPlayer
     private float ShotProbability = 0.5f;
     private ShotComponent Shot;
 
+    [SerializeField]
+    private float ShotMaxDistance = 6;
+
     protected override void Awake()
     {
         base.Awake();
@@ -16,7 +19,7 @@ public class AIMoveAndShotToPlayer : AIMoveToPlayer
 
     protected override void DoAction()
     {
-		if (Random.value < ShotProbability)
+		if (Random.value < ShotProbability && (Target.transform.position - transform.position).magnitude <= ShotMaxDistance)
         {
             Shot.TryOpenFire((Target.transform.position - transform.position).normalized);
         }
