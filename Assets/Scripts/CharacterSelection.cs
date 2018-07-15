@@ -7,10 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour {
 
-    [SerializeField] Sprite Girl;
-    [SerializeField] Sprite Boy;
-    [SerializeField] Image leftPanel;
-    [SerializeField] Image rightPanel;
+    [SerializeField] List<GameObject> upPanel;
+    [SerializeField] List<GameObject> downPanel;
 
     int count = 0;
     bool isFirstSelected = false;
@@ -18,46 +16,45 @@ public class CharacterSelection : MonoBehaviour {
 
     private void Update()
     {
-            if((Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.S)) && !isFirstSelected)
+            if((Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.D)) && !isFirstSelected)
             {
-                ChangeIcon(leftPanel);
+                ChangeIcon(upPanel);
             }
-            if((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow)) && !isSecondSelected)
+            if((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)) && !isSecondSelected)
             {
-                ChangeIcon(rightPanel);
+                ChangeIcon(downPanel);
             }
             if(Input.GetKeyDown(KeyCode.F) && !isFirstSelected)
             {
-                ApplySelection("player1", leftPanel.sprite);
+                ApplySelection("player1", upPanel);
                 isFirstSelected = true;
             }
             if(Input.GetKeyDown(KeyCode.Delete) && !isSecondSelected)
             {
-                ApplySelection("player2", rightPanel.sprite);
+                ApplySelection("player2", downPanel);
                 isSecondSelected = true;
             }
     }
 
-    void ChangeIcon(Image panel)
+    void ChangeIcon(List<GameObject> animations)
     {
-        if (panel.sprite == Girl)
-            panel.sprite = Boy;
-        else
-            panel.sprite = Girl;
+        foreach(GameObject obj in animations)
+        {
+            obj.SetActive(!obj.activeInHierarchy);
+        }
     }
 
-    void ApplySelection(string name, Sprite icon)
+    void ApplySelection(string name, List<GameObject> animations)
     {
         count++;
-        int gender;
-        if (icon == Girl)
-            gender = 0;
-        else
-            gender = 1;
-        PlayerPrefs.SetInt(name, gender);
+        for(int i = 0; i < animations.Count; i++)
+        {
+            if(animations[i].activeInHierarchy)
+                PlayerPrefs.SetInt(name, i);
+        }
         if (count == 2)
         {
-            SceneManager.LoadScene("MasterScene_1");
+            SceneManager.LoadScene("MasterScene_Artyom");
         }
     }
 

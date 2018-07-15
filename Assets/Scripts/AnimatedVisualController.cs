@@ -13,6 +13,28 @@ public class AnimatedVisualController : VisualController
     protected string RunAnimation = "newAnimation_1";
     [SerializeField]
     protected float MaxRunSpeed;
+    [SerializeField]
+    string playerPrefsName;
+
+
+    private void Awake()
+    {
+        int type = PlayerPrefs.GetInt(playerPrefsName);
+        var children = gameObject.GetComponentsInChildren<UnityArmatureComponent>();
+        for(int i = 0; i < children.Length; i++)
+        {
+            if (type == i)
+            {
+                children[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                children[i].gameObject.SetActive(false);
+            }
+        }
+        Animation = children[type];
+    }
+
 
     public override void SetMovement(Vector2 Direction, float Velocity)
     {
