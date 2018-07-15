@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3203,15 +3203,40 @@ Prefab:
     - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 570
+      value: 1139.4
       objectReference: {fileID: 0}
     - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1759045987902826, guid: e1407b6da38dca145b93ad27bdbb7333, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224203473021332580, guid: e1407b6da38dca145b93ad27bdbb7333,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6985,6 +7010,24 @@ Transform:
   m_PrefabParentObject: {fileID: 4665501547600240, guid: fa8ff49a1fe42e24abd2c6c9a35baa06,
     type: 2}
   m_PrefabInternal: {fileID: 1666140958}
+--- !u!1 &1178921724 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1759045987902826, guid: e1407b6da38dca145b93ad27bdbb7333,
+    type: 2}
+  m_PrefabInternal: {fileID: 464132248}
+--- !u!114 &1178921725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178921724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1254083943, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 1.8
 --- !u!1001 &1179922944
 Prefab:
   m_ObjectHideFlags: 0
