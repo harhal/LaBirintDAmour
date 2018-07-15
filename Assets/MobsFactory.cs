@@ -30,6 +30,11 @@ public class MobsFactory : MonoBehaviour {
 	private void Awake()
 	{
 		spawners = GetComponentsInChildren<Transform>().Where(s => s != transform).ToArray();
+		foreach (var item in spawners)
+		{
+			item.GetComponent<SpriteRenderer>().enabled = false;
+		}
+
 		sumProba = 0;
 		for (int i = 0; i < mobs.Length; i++)
 		{
