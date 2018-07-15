@@ -99,7 +99,8 @@ MonoBehaviour:
   WalkMinDelay: 0.5
   WalkMaxDelay: 3
   MinTargetDistance: 0
-  TargetSideFactor: 100
+  MaxTargetDistance: 10
+  DirectedMovementProbability: 1
 --- !u!114 &114204532329760644
 MonoBehaviour:
   m_ObjectHideFlags: 1
