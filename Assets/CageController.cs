@@ -9,6 +9,9 @@ public class CageController : MonoBehaviour, IQuest {
 	private float activateTime;
 	private float oldSpeed;
 
+	MobsFactory left;
+	MobsFactory right;
+
 	public void RunQuest()
 	{
 		gameObject.SetActive(true);
@@ -19,6 +22,18 @@ public class CageController : MonoBehaviour, IQuest {
 		character.GetComponent<Rigidbody2D>().velocity = new Vector2();
 		transform.position = character.transform.position + 0.25f * Vector3.up;
 		SetAllChild(true);
+
+		MobsFactory[] factories = FindObjectsOfType<MobsFactory>();
+		left = factories[0];
+		right = factories[1];
+		if (left.transform.position.x > right.transform.position.x)
+		{
+			var temp = left;
+			left = right;
+			right = temp;
+		}
+		left.DeltaTime /= 3;
+		right.DeltaTime = 1000000;
 	}
 	
 	void Update () {
@@ -28,6 +43,8 @@ public class CageController : MonoBehaviour, IQuest {
 			gameObject.SetActive(false);
 			character.MoveVelocity = oldSpeed;
 			SetAllChild(false);
+
+			left.DeltaTime = 10000000;
 		}
 	}
 
