@@ -1,0 +1,1409 @@
+{  
+  "frameRate": 60,
+  "isGlobal": 0,
+  "name": "NewProject_2",
+  "version": "5.5",
+  "armature": [
+    {
+      "bone": [
+        {
+          "name": "root",
+          "transform": { }
+        },
+        {
+          "transform": {
+            "y": 381.0004,
+            "x": -29.0979
+          },
+          "name": "bone_ikTarget2",
+          "parent": "root"
+        },
+        {
+          "transform": {
+            "skY": -3.1984,
+            "y": 565.7687,
+            "skX": -3.1984,
+            "x": -120.3956
+          },
+          "name": "bone_ikTarget4",
+          "parent": "root"
+        },
+        {
+          "length": 137,
+          "transform": {
+            "skY": -89.2095,
+            "y": -7.7937,
+            "skX": -89.2095,
+            "x": 70.2255
+          },
+          "parent": "root",
+          "name": "bone"
+        },
+        {
+          "transform": {
+            "y": 383.5867,
+            "x": 180.2665
+          },
+          "name": "bone_ikTarget3",
+          "parent": "root"
+        },
+        {
+          "transform": {
+            "y": 595.6786,
+            "x": -354.9475
+          },
+          "name": "bone_ikTarget5",
+          "parent": "root"
+        },
+        {
+          "transform": {
+            "y": -101.6951,
+            "x": -166.1259
+          },
+          "name": "bone_ikTarget",
+          "parent": "root"
+        },
+        {
+          "transform": {
+            "y": -216.441,
+            "x": -110.2111
+          },
+          "name": "bone_ikTarget1",
+          "parent": "root"
+        },
+        {
+          "length": 147,
+          "transform": {
+            "skY": -176.4039,
+            "y": 6.6205,
+            "skX": -176.4039,
+            "x": -24.1979
+          },
+          "parent": "bone",
+          "name": "LYAHA1"
+        },
+        {
+          "length": 161,
+          "transform": {
+            "skY": -144.3699,
+            "y": -8.2075,
+            "skX": -144.3699,
+            "x": -35.7192
+          },
+          "parent": "bone",
+          "name": "LYAHA"
+        },
+        {
+          "length": 171,
+          "transform": {
+            "skY": -13.2876,
+            "y": 3.1093,
+            "skX": -13.2876,
+            "x": -24.184
+          },
+          "parent": "bone",
+          "name": "MUZHIK"
+        },
+        {
+          "length": 136,
+          "transform": {
+            "skY": 16.0128,
+            "y": -1.8741,
+            "skX": 16.0128,
+            "x": 169.5813
+          },
+          "parent": "MUZHIK",
+          "name": "MUZHIK1"
+        },
+        {
+          "length": 205,
+          "transform": {
+            "skY": -20.8229,
+            "y": -7.5712,
+            "skX": -20.8229,
+            "x": 176.8529
+          },
+          "parent": "LYAHA",
+          "name": "IKRA"
+        },
+        {
+          "length": 224,
+          "transform": {
+            "skY": -2.2917,
+            "y": -10.0311,
+            "skX": -2.2917,
+            "x": 163.811
+          },
+          "parent": "LYAHA1",
+          "name": "IKRA1"
+        },
+        {
+          "length": 84,
+          "transform": {
+            "skY": -58.4317,
+            "y": -28.6115,
+            "skX": -58.4317,
+            "x": 60.0042
+          },
+          "parent": "MUZHIK1",
+          "name": "PLECHO1"
+        },
+        {
+          "length": 108,
+          "transform": {
+            "skY": 118.3308,
+            "y": 49.7688,
+            "skX": 118.3308,
+            "x": 61.0196
+          },
+          "parent": "MUZHIK1",
+          "name": "PLECHO"
+        },
+        {
+          "length": 100,
+          "transform": {
+            "skY": 35.7747,
+            "y": 10.3152,
+            "skX": 35.7747,
+            "x": 258.878
+          },
+          "parent": "IKRA1",
+          "name": "STUPNYA1"
+        },
+        {
+          "length": 112,
+          "transform": {
+            "skY": 66.9958,
+            "y": 3.4013,
+            "skX": 66.9958,
+            "x": 250.8618
+          },
+          "parent": "IKRA",
+          "name": "STUPNYA"
+        },
+        {
+          "length": 115,
+          "transform": {
+            "skY": -2.9372,
+            "y": -1.4057,
+            "skX": -2.9372,
+            "x": 137.3741
+          },
+          "parent": "MUZHIK1",
+          "name": "MUZHIK2"
+        },
+        {
+          "length": 133,
+          "transform": {
+            "skY": -0.8748,
+            "y": 10.1871,
+            "skX": -0.8748,
+            "x": 135.3094
+          },
+          "parent": "PLECHO",
+          "name": "RUKA1"
+        },
+        {
+          "length": 131,
+          "transform": {
+            "skY": 6.9457,
+            "y": -4.0712,
+            "skX": 6.9457,
+            "x": 130.0083
+          },
+          "parent": "PLECHO1",
+          "name": "RUKA2"
+        }
+      ],
+      "aabb": {
+        "width": 427.3735677120195,
+        "y": -491.3156012242139,
+        "height": 983.7915719208196,
+        "x": -202.03253910017537
+      },
+      "skin": [
+        {
+          "slot": [
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/LYAHA",
+                  "type": "image",
+                  "name": "MUZHIK/LYAHA",
+                  "transform": {
+                    "skY": -135.5489,
+                    "y": -2.4498,
+                    "skX": -135.5489,
+                    "x": 70.9506
+                  }
+                }
+              ],
+              "name": "LYAHA1"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/IKRA",
+                  "type": "image",
+                  "name": "MUZHIK/IKRA",
+                  "transform": {
+                    "skY": -79.9912,
+                    "y": -3.3914,
+                    "skX": -79.9912,
+                    "x": 121.1251
+                  }
+                }
+              ],
+              "name": "IKRA"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/央铋2",
+                  "type": "image",
+                  "name": "MUZHIK/央铋2",
+                  "transform": {
+                    "skY": 95.9155,
+                    "y": -3.4507,
+                    "skX": 95.9155,
+                    "x": 130.9493
+                  }
+                }
+              ],
+              "name": "shlyapa"
+            },
+            {
+              "display": [
+                {
+                  "bonePose": [ 18, 0.34607133338194795, -0.9382082030185199, 0.9382082030185199, 0.3460713333819474, 46.81954999226187, -285.5525705983573, 11, 0.10003907051442021, -0.9949835095973251, 0.9949835095973252, 0.10003907051441971, 34.47544746871538, -148.72695847515814, 10, -0.21639017162382676, -0.976306966903653, 0.9763069669036532, -0.2163901716238268, 73.00085199209803, 16.430892401842932 ],
+                  "uvs": [ 0, 0, 1, 0, 0, 1, 1, 1, 0.44025, 0.31838, 0.49057, 0.35897, 0.23585, 0.37607, 0.27044, 0.42308, 0.22642, 0.5406, 0.2327, 0.60043, 0.27673, 0.68803, 0.2956, 0.83547, 0.46541, 0.82906, 0.59119, 0.96368, 0.61635, 1, 1, 0.88141, 0.85849, 0.74145, 0.77044, 0.61752, 0.69811, 0.42521, 0.48113, 0.27564, 0.51887, 0.26282, 0.5, 0.22222, 0.50943, 0.1688, 0.62893, 0.1688, 0.58491, 0.10897, 0.50314, 0.1047, 0.47799, 0, 0.14151, 0, 0.10063, 0.0812, 0, 0.07692, 0, 0.13141, 0.07862, 0.15812, 0.10063, 0.19658, 0.04088, 0.23504, 0.0566, 0.26496, 0.09434, 0.27564, 0.14465, 0.38675, 0.29245, 0.22222, 0.30503, 0.11538, 0.43082, 0.48291, 0.6195, 0.75427 ],
+                  "vertices": [ -159, -234, 159, -234, -159, 234, 159, 234, -19, -85, -3, -66, -84, -58, -73, -36, -87, 19, -85, 47, -71, 88, -65, 157, -11, 154, 29, 217, 37, 234, 159, 178.5, 114, 113, 86, 55, 63, -35, -6, -105, 6, -111, 0, -130, 3, -155, 41, -155, 27, -183, 1, -185, -7, -234, -114, -234, -127, -196, -159, -198, -159, -172.5, -134, -160, -127, -142, -146, -124, -141, -110, -129, -105, -113, -53, -66, -130, -62, -180, -22, -8, 38, 119 ],
+                  "path": "MUZHIK/MUZHIK",
+                  "userEdges": [ ],
+                  "edges": [ 3, 14, 14, 2, 1, 15, 15, 3, 26, 1, 0, 27, 27, 26, 29, 0, 2, 30, 30, 29 ],
+                  "slotPose": [ 0.8975455274498478, 0.4409217914265212, -0.4409217914265223, 0.8975455274498481, 59.48122738478524, -204.56898714767095 ],
+                  "triangles": [ 16, 13, 15, 13, 14, 15, 26, 24, 1, 24, 23, 1, 17, 16, 1, 18, 17, 1, 16, 15, 1, 23, 18, 1, 15, 14, 3, 23, 20, 18, 40, 13, 16, 17, 40, 16, 20, 5, 18, 18, 39, 17, 39, 40, 17, 39, 10, 40, 12, 13, 40, 5, 39, 18, 26, 25, 24, 13, 2, 14, 10, 12, 40, 21, 20, 23, 22, 21, 23, 24, 22, 23, 11, 2, 13, 9, 10, 39, 19, 5, 20, 25, 22, 24, 12, 11, 13, 19, 4, 5, 26, 38, 25, 21, 19, 20, 10, 11, 12, 7, 39, 5, 37, 21, 22, 38, 37, 22, 25, 38, 22, 37, 19, 21, 8, 9, 39, 4, 7, 5, 37, 4, 19, 27, 38, 26, 37, 6, 4, 6, 7, 4, 7, 8, 39, 35, 6, 37, 10, 2, 11, 28, 31, 38, 32, 37, 38, 31, 32, 38, 27, 28, 38, 32, 35, 37, 35, 36, 6, 36, 8, 7, 9, 2, 10, 6, 36, 7, 8, 36, 9, 36, 2, 9, 33, 34, 35, 33, 35, 32, 0, 28, 27, 35, 34, 36, 34, 2, 36, 33, 2, 34, 31, 33, 32, 30, 31, 28, 29, 30, 28, 0, 29, 28, 30, 2, 33, 30, 33, 31 ],
+                  "type": "mesh",
+                  "transform": {
+                    "skY": 69.7528,
+                    "y": 20.1252,
+                    "skX": 69.7528,
+                    "x": -26.7201
+                  },
+                  "width": 318,
+                  "weights": [ 1, 18, 1, 1, 18, 1, 1, 10, 1, 1, 10, 1, 3, 18, 0.5279897722015816, 11, 0.44991269722779936, 10, 0.022097530570619004, 2, 18, 0.09, 11, 0.91, 1, 18, 1, 2, 11, 0.71, 18, 0.29, 3, 18, 0.04, 11, 0.93, 10, 0.03, 3, 18, 0.18877387284591576, 11, 0.4631790650558364, 10, 0.34804706209824793, 3, 18, 0.11148029167089349, 11, 0.45189517122517436, 10, 0.4366245371039322, 2, 10, 0.5122778589861442, 11, 0.4877221410138558, 2, 10, 0.84, 11, 0.16, 1, 10, 1, 1, 10, 1, 2, 10, 0.9357173136593236, 11, 0.06428268634067638, 2, 10, 0.8437056744794628, 11, 0.15629432552053724, 3, 18, 0.07816498698671587, 10, 0.5609087864228994, 11, 0.3609262265903846, 3, 11, 0.92, 10, 0.05, 18, 0.03, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 1, 18, 1, 2, 18, 0.9671461544346255, 11, 0.032853845565374545, 2, 18, 0.9992187145477257, 11, 0.0007812854522742259, 3, 18, 0.0005223102403626344, 11, 0.9990542386562746, 10, 0.00042345110336280316, 2, 10, 0.9786819919274294, 11, 0.021318008072570643 ],
+                  "height": 468,
+                  "name": "MUZHIK/MUZHIK"
+                }
+              ],
+              "name": "MUZHIK"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/PLECHO",
+                  "type": "image",
+                  "name": "MUZHIK/PLECHO",
+                  "transform": {
+                    "skY": -94.7397,
+                    "y": 0.8608,
+                    "skX": -94.7397,
+                    "x": 60.6809
+                  }
+                }
+              ],
+              "name": "PLECHO"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/LYAHA",
+                  "type": "image",
+                  "name": "MUZHIK/LYAHA",
+                  "transform": {
+                    "skY": -130.0448,
+                    "y": -3.3852,
+                    "skX": -130.0448,
+                    "x": 69.4551
+                  }
+                }
+              ],
+              "name": "LYAHA"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/RUKA2",
+                  "type": "image",
+                  "name": "MUZHIK/RUKA2",
+                  "transform": {
+                    "skY": 138.6969,
+                    "y": 8.6603,
+                    "skX": 138.6969,
+                    "x": 87.5587
+                  }
+                }
+              ],
+              "name": "RUKA2"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/STUPNYA",
+                  "type": "image",
+                  "name": "MUZHIK/STUPNYA",
+                  "transform": {
+                    "skY": -155.3048,
+                    "y": 2.0216,
+                    "skX": -155.3048,
+                    "x": 47.4929
+                  }
+                }
+              ],
+              "name": "STUPNYA1"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/IKRA",
+                  "type": "image",
+                  "name": "MUZHIK/IKRA",
+                  "transform": {
+                    "skY": -82.2302,
+                    "y": -4.1828,
+                    "skX": -82.2302,
+                    "x": 124.4868
+                  }
+                }
+              ],
+              "name": "IKRA1"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/RUKA1",
+                  "type": "image",
+                  "name": "MUZHIK/RUKA1",
+                  "transform": {
+                    "skY": 134.6567,
+                    "y": 3.041,
+                    "skX": 134.6567,
+                    "x": 79.4012
+                  }
+                }
+              ],
+              "name": "RUKA1"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/STUPNYA",
+                  "type": "image",
+                  "name": "MUZHIK/STUPNYA",
+                  "transform": {
+                    "skY": -150.7601,
+                    "y": 6.6041,
+                    "skX": -150.7601,
+                    "x": 49.5322
+                  }
+                }
+              ],
+              "name": "STUPNYA"
+            },
+            {
+              "display": [
+                {
+                  "path": "MUZHIK/PLECHO",
+                  "type": "image",
+                  "name": "MUZHIK/PLECHO",
+                  "transform": {
+                    "skY": -90.8449,
+                    "y": -5.3877,
+                    "skX": -90.8449,
+                    "x": 50.0143
+                  }
+                }
+              ],
+              "name": "PLECHO1"
+            }
+          ],
+          "name": ""
+        }
+      ],
+      "type": "Armature",
+      "frameRate": 60,
+      "animation": [
+        {
+          "bone": [
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "root"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "LYAHA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "LYAHA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK2"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "PLECHO"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "IKRA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "PLECHO1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "IKRA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "STUPNYA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "RUKA2"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "RUKA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "STUPNYA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget2"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget3"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget4"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget5"
+            },
+            {
+              "translateFrame": [
+                {
+                  "tweenEasing": 0,
+                  "duration": 39
+                },
+                {
+                  "y": -22.4019,
+                  "tweenEasing": 0,
+                  "duration": 20,
+                  "x": -137.0279
+                },
+                { "duration": 0 }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [
+                {
+                  "tweenEasing": 0,
+                  "duration": 25
+                },
+                {
+                  "tweenEasing": 0,
+                  "duration": 14,
+                  "rotate": -28.1799
+                },
+                {
+                  "tweenEasing": 0,
+                  "duration": 20,
+                  "rotate": 38.7874
+                },
+                { "duration": 0 }
+              ],
+              "name": "bone"
+            }
+          ],
+          "frame": [ ],
+          "duration": 59,
+          "slot": [
+            {
+              "displayFrame": [ ],
+              "name": "STUPNYA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "LYAHA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "RUKA2",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "PLECHO1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "shlyapa",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "MUZHIK",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "STUPNYA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "LYAHA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "IKRA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "RUKA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "PLECHO",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "IKRA1",
+              "colorFrame": [ ]
+            }
+          ],
+          "playTimes": 0,
+          "ffd": [ ],
+          "name": "animtion0",
+          "ik": [ ]
+        },
+        {
+          "bone": [
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "root"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget2"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget4"
+            },
+            {
+              "translateFrame": [
+                {
+                  "tweenEasing": 0,
+                  "duration": 11
+                },
+                {
+                  "y": -5.2322,
+                  "tweenEasing": 0,
+                  "duration": 9,
+                  "x": 12.298
+                },
+                {
+                  "tweenEasing": 0,
+                  "duration": 11,
+                  "x": 24.5961
+                },
+                {
+                  "y": 8.872,
+                  "tweenEasing": 0,
+                  "duration": 9,
+                  "x": 12.298
+                },
+                { "duration": 0 }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [
+                {
+                  "tweenEasing": 0,
+                  "duration": 40
+                },
+                { "duration": 0 }
+              ],
+              "name": "bone"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget3"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget5"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "LYAHA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "LYAHA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "IKRA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "IKRA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "PLECHO1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "PLECHO"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "STUPNYA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "STUPNYA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK2"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "RUKA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "RUKA2"
+            }
+          ],
+          "frame": [ ],
+          "duration": 40,
+          "slot": [
+            {
+              "displayFrame": [ ],
+              "name": "STUPNYA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "LYAHA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "RUKA2",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "PLECHO1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "shlyapa",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "MUZHIK",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "STUPNYA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "LYAHA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "IKRA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "RUKA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "PLECHO",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "IKRA1",
+              "colorFrame": [ ]
+            }
+          ],
+          "playTimes": 0,
+          "ffd": [ ],
+          "name": "Idle",
+          "ik": [ ]
+        },
+        {
+          "bone": [
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "root"
+            },
+            {
+              "translateFrame": [
+                {
+                  "y": 2.1419,
+                  "tweenEasing": 0,
+                  "duration": 11,
+                  "x": 171.0284
+                },
+                {
+                  "y": -64.5017,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": 262.738
+                },
+                {
+                  "y": -104.8446,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": 21.4187
+                },
+                {
+                  "y": -92.7644,
+                  "tweenEasing": 0,
+                  "duration": 10,
+                  "x": -91.9862
+                },
+                {
+                  "y": 2.1419,
+                  "duration": 0,
+                  "x": 171.0284
+                }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget2"
+            },
+            {
+              "translateFrame": [
+                {
+                  "y": 108.2212,
+                  "tweenEasing": 0,
+                  "duration": 11,
+                  "x": -144.5945
+                },
+                {
+                  "y": -243.9939,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": -305.7728
+                },
+                {
+                  "y": 92.0972,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": -392.6386
+                },
+                {
+                  "y": 82.3094,
+                  "tweenEasing": 0,
+                  "duration": 10,
+                  "x": -44.8367
+                },
+                {
+                  "y": -70.6817,
+                  "duration": 0,
+                  "x": -462.6441
+                }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget4"
+            },
+            {
+              "translateFrame": [
+                {
+                  "tweenEasing": 0,
+                  "duration": 11
+                },
+                {
+                  "y": -24.8834,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": -27.3324
+                },
+                {
+                  "tweenEasing": 0,
+                  "duration": 12
+                },
+                {
+                  "y": -24.8834,
+                  "tweenEasing": 0,
+                  "duration": 10,
+                  "x": -27.3324
+                },
+                { "duration": 0 }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [
+                {
+                  "tweenEasing": 0,
+                  "duration": 45,
+                  "rotate": -20.9364
+                },
+                {
+                  "duration": 0,
+                  "rotate": -20.9364
+                }
+              ],
+              "name": "bone"
+            },
+            {
+              "translateFrame": [
+                {
+                  "y": -97.2409,
+                  "tweenEasing": 0,
+                  "duration": 11,
+                  "x": -198.5514
+                },
+                {
+                  "y": -101.846,
+                  "tweenEasing": 0,
+                  "duration": 4,
+                  "x": -346.3405
+                },
+                {
+                  "y": -13.9222,
+                  "tweenEasing": 0,
+                  "duration": 8,
+                  "x": -235.9806
+                },
+                {
+                  "y": 0.9638,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": -52.0475
+                },
+                {
+                  "y": -56.7069,
+                  "tweenEasing": 0,
+                  "duration": 10,
+                  "x": 44.724
+                },
+                {
+                  "y": -97.2409,
+                  "duration": 0,
+                  "x": -198.5514
+                }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget3"
+            },
+            {
+              "translateFrame": [
+                {
+                  "y": 17.8846,
+                  "tweenEasing": 0,
+                  "duration": 11,
+                  "x": 143.8266
+                },
+                {
+                  "y": 110.1671,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": 336.6628
+                },
+                {
+                  "y": 55.9796,
+                  "tweenEasing": 0,
+                  "duration": 12,
+                  "x": 98.0326
+                },
+                {
+                  "y": -208.0421,
+                  "tweenEasing": 0,
+                  "duration": 10,
+                  "x": -53.0576
+                },
+                {
+                  "y": 40.4828,
+                  "duration": 0,
+                  "x": 118.2473
+                }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget5"
+            },
+            {
+              "translateFrame": [
+                {
+                  "y": 116.7838,
+                  "tweenEasing": 0,
+                  "duration": 23,
+                  "x": 183.8724
+                },
+                {
+                  "y": 9.939,
+                  "tweenEasing": 0,
+                  "duration": 22,
+                  "x": 59.6343
+                },
+                {
+                  "y": 116.7838,
+                  "duration": 0,
+                  "x": 183.8724
+                }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget"
+            },
+            {
+              "translateFrame": [
+                {
+                  "y": 171.4486,
+                  "tweenEasing": 0,
+                  "duration": 23,
+                  "x": -4.9695
+                },
+                {
+                  "y": 245.9915,
+                  "tweenEasing": 0,
+                  "duration": 22,
+                  "x": 203.7505
+                },
+                {
+                  "y": 171.4486,
+                  "duration": 0,
+                  "x": -4.9695
+                }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "bone_ikTarget1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "LYAHA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "LYAHA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "MUZHIK1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "IKRA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "IKRA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "PLECHO1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "PLECHO"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "STUPNYA1"
+            },
+            {
+              "translateFrame": [
+                { "duration": 11 },
+                {
+                  "tweenEasing": 0,
+                  "duration": 15
+                },
+                { "duration": 19 }
+              ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "STUPNYA"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [
+                {
+                  "duration": 45,
+                  "rotate": 14.1729
+                }
+              ],
+              "name": "MUZHIK2"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "RUKA1"
+            },
+            {
+              "translateFrame": [ ],
+              "scaleFrame": [ ],
+              "rotateFrame": [ ],
+              "name": "RUKA2"
+            }
+          ],
+          "frame": [ ],
+          "duration": 45,
+          "slot": [
+            {
+              "displayFrame": [ ],
+              "name": "STUPNYA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "LYAHA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "RUKA2",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "PLECHO1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "shlyapa",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "MUZHIK",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "STUPNYA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "LYAHA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "IKRA",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "RUKA1",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "PLECHO",
+              "colorFrame": [ ]
+            },
+            {
+              "displayFrame": [ ],
+              "name": "IKRA1",
+              "colorFrame": [ ]
+            }
+          ],
+          "playTimes": 0,
+          "ffd": [ ],
+          "name": "Run",
+          "ik": [ ]
+        }
+      ],
+      "slot": [
+        {
+          "name": "RUKA2",
+          "parent": "RUKA2",
+          "color": { }
+        },
+        {
+          "z": 1,
+          "name": "PLECHO1",
+          "parent": "PLECHO1",
+          "color": { }
+        },
+        {
+          "z": 2,
+          "name": "STUPNYA1",
+          "parent": "STUPNYA1",
+          "color": { }
+        },
+        {
+          "z": 3,
+          "name": "IKRA1",
+          "parent": "IKRA1",
+          "color": { }
+        },
+        {
+          "z": 4,
+          "name": "LYAHA1",
+          "parent": "LYAHA1",
+          "color": { }
+        },
+        {
+          "z": 5,
+          "name": "shlyapa",
+          "parent": "MUZHIK2",
+          "color": { }
+        },
+        {
+          "z": 6,
+          "name": "MUZHIK",
+          "parent": "MUZHIK2",
+          "color": { }
+        },
+        {
+          "z": 7,
+          "name": "STUPNYA",
+          "parent": "STUPNYA",
+          "color": { }
+        },
+        {
+          "z": 8,
+          "name": "LYAHA",
+          "parent": "LYAHA",
+          "color": { }
+        },
+        {
+          "z": 9,
+          "name": "IKRA",
+          "parent": "IKRA",
+          "color": { }
+        },
+        {
+          "z": 10,
+          "name": "RUKA1",
+          "parent": "RUKA1",
+          "color": { }
+        },
+        {
+          "z": 11,
+          "name": "PLECHO",
+          "parent": "PLECHO",
+          "color": { }
+        }
+      ],
+      "name": "Armature",
+      "ik": [
+        {
+          "bendPositive": "false",
+          "bone": "IKRA1",
+          "chain": 1,
+          "name": "bone_ik3",
+          "target": "bone_ikTarget3"
+        },
+        {
+          "bendPositive": "false",
+          "bone": "IKRA",
+          "chain": 1,
+          "name": "bone_ik2",
+          "target": "bone_ikTarget2"
+        },
+        {
+          "bone": "STUPNYA1",
+          "name": "bone_ik4",
+          "target": "bone_ikTarget4"
+        },
+        {
+          "bone": "RUKA2",
+          "chain": 1,
+          "name": "bone_ik",
+          "target": "bone_ikTarget"
+        },
+        {
+          "bone": "RUKA1",
+          "chain": 1,
+          "name": "bone_ik1",
+          "target": "bone_ikTarget1"
+        },
+        {
+          "bone": "STUPNYA",
+          "name": "bone_ik5",
+          "target": "bone_ikTarget5"
+        }
+      ],
+      "defaultActions": [ { "gotoAndPlay": "Idle" } ]
+    }
+  ]
+}

@@ -45,7 +45,10 @@ public class AnimatedVisualController : VisualController
             var state = Animation.animation.GetState(IdleAnimation);
             if (state == null || !state.isPlaying)
             {
-                Animation.animation.FadeIn(IdleAnimation, 0.1f);
+                if (Animation.animation.HasAnimation(IdleAnimation))
+                {
+                    Animation.animation.FadeIn(IdleAnimation, 0.1f);
+                }
             }
         }
         else
@@ -54,7 +57,10 @@ public class AnimatedVisualController : VisualController
             var state = Animation.animation.GetState(RunAnimation);
             if (state == null || !state.isPlaying)
             {
-                Animation.animation.FadeIn(RunAnimation, 0.1f);
+                if (Animation.animation.HasAnimation(RunAnimation))
+                {
+                    Animation.animation.FadeIn(RunAnimation, 0.1f);
+                }
             }
         }
     }
