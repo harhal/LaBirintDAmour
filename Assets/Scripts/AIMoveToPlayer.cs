@@ -57,7 +57,7 @@ public class AIMoveToPlayer : MonoBehaviour {
                 TargetedDirections.Add(d);
             }
         }
-        List<Vector2> SelectedDirectionsArray = Random.value < DirectedMovementProbability || TargetDirection.magnitude >= MaxTargetDistance ?
+        List<Vector2> SelectedDirectionsArray = TargetedDirections.Count > 0 && (Random.value < DirectedMovementProbability || TargetDirection.magnitude >= MaxTargetDistance) ?
             TargetedDirections : CommonDirections;
 
         Movement.Go(SelectedDirectionsArray[Random.Range(0, (SelectedDirectionsArray.Count))]);

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class DestroyOnCollisionComponent : MonoBehaviour
 {
+    private bool DestroyByStatic = true;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (DestroyByStatic || collision.collider.GetComponent<DamageReceiver>() != null)
+            Destroy(gameObject);
     }
 }
