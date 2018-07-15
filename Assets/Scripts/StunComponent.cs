@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StunComponent : MonoBehaviour {
-
-    [ShowOnly]
+    
     private float StunTimer;
     private MovementComponent Movement;
     private ShotComponent Shot;
